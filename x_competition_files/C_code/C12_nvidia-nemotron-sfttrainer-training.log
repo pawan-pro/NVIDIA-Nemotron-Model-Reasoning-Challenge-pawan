@@ -1,0 +1,8 @@
+3.9s 1 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+3.9s 2 cells[i][c] = re.sub('\\\\\|', '|', cell)
+4.4s 3 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+4.4s 4 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+5.6s 5 /usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+5.6s 6 warn(
+5.6s 7 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+7.4s 8 [NbConvertApp] Writing 320746 bytes to __results__.html

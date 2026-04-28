@@ -67,12 +67,12 @@ Kaggle notebook environment is suitable for:
 But it is not robust for actual tiny LoRA training on Nemotron-3-Nano-30B hybrid Mamba/MoE in this setup.
 
 ## Project tracking
-A dedicated Linear project was created:
+A dedicated Linear project was created under the **kaggle** team:
 - **Kaggle - NVIDIA Nemotron Reasoning Challenge**
 
-Confirmed blocker issue created in Linear:
-- **MUB-12 — Nemotron Kaggle blocker: tiny LoRA training fails in notebook runtime**
-- URL: https://linear.app/mubama-group-v4-strategy/issue/MUB-12/nemotron-kaggle-blocker-tiny-lora-training-fails-in-notebook fileciteturn19file0
+Confirmed blocker issue created in Linear under the **kaggle** team:
+- **KAG-1 — Nemotron Kaggle blocker: tiny LoRA training fails in notebook runtime**
+- URL: https://linear.app/mubama-group-v4-strategy/issue/KAG-1/nemotron-kaggle-blocker-tiny-lora-training-fails-in-notebook-runtime fileciteturn27file0
 
 ## Recommended next steps
 1. Preserve frozen packaging notebook as submission baseline.

@@ -1,0 +1,19 @@
+{
+  "id": "jatalepawan/notebook-b-v12-nemotron-sft-with-assistant-only",
+  "title": "Notebook B v12 Nemotron SFT with Assistant Only",
+  "code_file": "notebook_b_sft_assistant_loss_bal128_20260511_targetfix.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "competition_sources": [
+    "nvidia-nemotron-model-reasoning-challenge"
+  ],
+  "model_sources": [
+    "metric/nemotron-3-nano-30b-a3b-bf16/Transformers/default/1"
+  ],
+  "kernel_sources": [
+    "ryanholbrook/nvidia-utility-script"
+  ]
+}

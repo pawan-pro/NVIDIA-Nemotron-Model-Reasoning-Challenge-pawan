@@ -1,1 +1,8 @@
 .DS_Store
+token.md
+
+kaggle.json
+**/kaggle.json
+kaggle_outputs/
+*.log
+.env

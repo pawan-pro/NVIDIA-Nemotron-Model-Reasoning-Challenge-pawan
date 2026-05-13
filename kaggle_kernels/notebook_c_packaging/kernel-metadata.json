@@ -1,0 +1,16 @@
+{
+  "id": "jatalepawan/notebook-c-adapter-validation-submission-pack-tr",
+  "title": "Notebook C Adapter Validation Submission Pack Tr",
+  "code_file": "notebook_c_adapter_validation_submission_v12_20260511.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "competition_sources": [
+    "nvidia-nemotron-model-reasoning-challenge"
+  ],
+  "kernel_sources": [
+    "jatalepawan/notebook-b-v12-nemotron-sft-with-assistant-only"
+  ]
+}

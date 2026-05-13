@@ -21,6 +21,8 @@ Authenticate with OAuth:
 kaggle auth login
 ```
 
+The check script verifies OAuth without printing the cached token.
+
 If you prefer a token file, generate an API token in Kaggle settings and save it at:
 
 ```text

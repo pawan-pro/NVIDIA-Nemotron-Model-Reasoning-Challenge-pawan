@@ -11,7 +11,8 @@ pipx install 'git+https://github.com/Kaggle/kaggle-cli.git'
 If you prefer `pip`:
 
 ```bash
-python -m pip install 'git+https://github.com/Kaggle/kaggle-cli.git'
+python3.11 -m pip install --user 'git+https://github.com/Kaggle/kaggle-cli.git'
+export PATH="$HOME/Library/Python/3.11/bin:$PATH"
 ```
 
 Credentials location:

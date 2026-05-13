@@ -3,6 +3,10 @@ token.md
 
 kaggle.json
 **/kaggle.json
+.kaggle/
+**/.kaggle/
+access_token
+**/access_token
 kaggle_outputs/
 *.log
 .env

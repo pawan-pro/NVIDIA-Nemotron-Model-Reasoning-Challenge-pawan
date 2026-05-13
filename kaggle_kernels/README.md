@@ -15,13 +15,19 @@ python3.11 -m pip install --user 'git+https://github.com/Kaggle/kaggle-cli.git'
 export PATH="$HOME/Library/Python/3.11/bin:$PATH"
 ```
 
-Credentials location:
+Authenticate with OAuth:
 
-```text
-~/.config/kaggle/kaggle.json
+```bash
+kaggle auth login
 ```
 
-Never commit `kaggle.json`.
+If you prefer a token file, generate an API token in Kaggle settings and save it at:
+
+```text
+~/.kaggle/access_token
+```
+
+The older `~/.config/kaggle/kaggle.json` path is kept as a legacy fallback. Never commit `kaggle.json`, `access_token`, or any Kaggle secret.
 
 Current best:
 

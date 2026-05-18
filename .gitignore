@@ -8,5 +8,7 @@ kaggle.json
 access_token
 **/access_token
 kaggle_outputs/
+*.safetensors
+submission.zip
 *.log
 .env

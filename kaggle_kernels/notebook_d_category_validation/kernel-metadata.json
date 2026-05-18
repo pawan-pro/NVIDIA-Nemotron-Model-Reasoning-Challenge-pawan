@@ -1,0 +1,20 @@
+{
+  "id": "jatalepawan/notebook-d-category-validation-nemotron",
+  "title": "Notebook D Category Validation Nemotron",
+  "code_file": "notebook_d_category_validation_20260518.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "competition_sources": [
+    "nvidia-nemotron-model-reasoning-challenge"
+  ],
+  "model_sources": [
+    "metric/nemotron-3-nano-30b-a3b-bf16/Transformers/default/1"
+  ],
+  "kernel_sources": [
+    "ryanholbrook/nvidia-utility-script",
+    "jatalepawan/notebook-c-adapter-validation-submission-pack-tr"
+  ]
+}

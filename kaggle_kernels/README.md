@@ -55,8 +55,25 @@ Run order:
 6. `bash kaggle_kernels/scripts/fetch_c_outputs.sh`
 7. Submit `submission.zip` via the Kaggle UI or notebook submit panel
 
+Category validation run order:
+
+1. Notebook B trains the LoRA adapter.
+2. Notebook C packages the adapter into `/kaggle/working/submission.zip`.
+3. Notebook D validates category-level behavior from the Notebook C output.
+
+Notebook D:
+
+- Push with `bash kaggle_kernels/scripts/push_d.sh`.
+- Check with `bash kaggle_kernels/scripts/status_d.sh`.
+- Inspect logs with `bash kaggle_kernels/scripts/logs_d.sh`.
+- It may require RTX Pro 6000 because it runs vLLM inference with the submitted LoRA.
+- It is validation-only and must not be used for leaderboard submission.
+- Do not fetch large adapter files locally.
+- If fetching D outputs, fetch only diagnostic CSVs where possible, not `submission.zip` or large adapter artifacts.
+
 Notebook wiring:
 
 - Notebook C must have competition input `nvidia-nemotron-model-reasoning-challenge`.
 - Notebook C must also include Notebook B output input from `jatalepawan/notebook-b-v12-nemotron-sft-with-assistant-only`.
 - In Kaggle kernel metadata, `kernel_sources` is represented as `username/kernel-slug`, so this repo uses that slug in Notebook C metadata.
+- Notebook D must include Notebook C output input from `jatalepawan/notebook-c-adapter-validation-submission-pack-tr`.

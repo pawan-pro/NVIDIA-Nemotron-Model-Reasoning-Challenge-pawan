@@ -78,3 +78,4 @@ Notebook wiring:
 - In Kaggle kernel metadata, `kernel_sources` is represented as `username/kernel-slug`, so this repo uses that slug in Notebook C metadata.
 - Notebook D must include Notebook C output input from `jatalepawan/notebook-c-adapter-validation-submission-pack-tr`.
 - Notebook D also mounts `metric/nvidia-metric-utility-script` so vLLM is available in the offline Kaggle runtime.
+- If Notebook D errors with `vLLM utility root not found`, open the Kaggle Notebook D settings and verify the metric utility input is mounted, then check the logs for the printed utility discovery paths.

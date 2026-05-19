@@ -79,3 +79,5 @@ Notebook wiring:
 - Notebook D must include Notebook C output input from `jatalepawan/notebook-c-adapter-validation-submission-pack-tr`.
 - Notebook D also mounts `metric/nvidia-metric-utility-script` so vLLM is available in the offline Kaggle runtime.
 - If Notebook D errors with `vLLM utility root not found`, open the Kaggle Notebook D settings and verify the metric utility input is mounted, then check the logs for the printed utility discovery paths.
+- Notebook D metadata is aligned with `huikang/adapter-validation-notebook`, including the Kaggle BYOD image and `NvidiaRtxPro6000` machine shape used by that working vLLM validation notebook.
+- If Kaggle CLI still cannot mount the vLLM runtime, set `VALIDATE_PACKAGING_ONLY = True` in the Kaggle web UI copy to skip inference and confirm packaging only.

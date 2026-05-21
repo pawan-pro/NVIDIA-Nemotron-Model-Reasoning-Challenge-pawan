@@ -70,6 +70,11 @@ Notebook D:
 - It is validation-only and must not be used for leaderboard submission.
 - Do not fetch large adapter files locally.
 - If fetching D outputs, fetch only diagnostic CSVs where possible, not `submission.zip` or large adapter artifacts.
+- Notebook D can now recreate `/kaggle/working/submission.zip`.
+- Notebook D should normally remain diagnostic, not the primary submission path.
+- If Notebook D is submitted, confirm the output page shows root-level `submission.zip`.
+- Use Kaggle web UI with RTX Pro 6000 for vLLM validation.
+- The CLI path for Notebook D may not mount the metric utility correctly.
 
 Notebook wiring:
 
